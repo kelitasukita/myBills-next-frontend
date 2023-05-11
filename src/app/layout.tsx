@@ -1,7 +1,7 @@
 import './globals.css'
 import { Poppins } from 'next/font/google'
 
-const poppins = Poppins({ subsets: ['latin'], weight: '300' })
+const poppins = Poppins({ subsets: ['latin'], weight: ['200', '300', '400', '500', '700', '800'] })
 
 export const metadata = {
   title: 'MyBills - Financial',
@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`h-screen flex justify-center items-center${poppins.className}`}>{children}</body>
+      <body className={`h-screen flex flex-col justify-center items-center text-gray-500 ${poppins.className}`}>{children}</body>
     </html>
   )
 }

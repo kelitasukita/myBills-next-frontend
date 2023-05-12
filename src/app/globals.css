@@ -5,3 +5,7 @@
 html {
   @apply bg-indigo-50;
 }
+
+:focus {
+  outline: none;
+}

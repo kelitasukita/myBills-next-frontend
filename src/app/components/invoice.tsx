@@ -21,7 +21,7 @@ export default function Invoice() {
       </div>
 
       {/* <div className="col-start-3 col-end-3 row-start-2 row-end-3 flex justify-end items-center sm:col-start-5 sm:col-end-5 sm:row-start-1 sm:mt-0 sm:justify-between">
-        <div className="flex justify-center items-center w-26 h-11 mt-12 mr-0 bg-orange-500 rounded-md bg-opacity-20 sm:mt-0 sm:m-auto">
+        <div className="flex justify-center items-center w-26 h-11 mt-12 mr-0 bg-orange-500 rounded-md bg-opacity-10 sm:mt-0 sm:m-auto">
           <div className="w-2 h-2 rounded-full bg-orange-400"></div>
           <span className="heading-s ml-2 rounded-md text-orange-400">Pending</span>
         </div>

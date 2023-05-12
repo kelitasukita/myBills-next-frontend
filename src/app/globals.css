@@ -9,3 +9,26 @@ html {
 :focus {
   outline: none;
 }
+
+.heading-l {
+  @apply text-4xl leading-8  font-bold;
+  @layer -tracking-1;
+}
+.heading-m {
+  @apply text-2xl  font-bold leading-5 tracking-wide;
+}
+.heading-s {
+  @apply text-base leading-4  font-bold;
+  @layer -tracking-0.25;
+}
+.heading-s-variant {
+  @apply text-base leading-4  font-bold;
+  @layer -tracking-0.25;
+}
+.body {
+  @apply text-sm font-medium tracking-tight leading-4;
+}
+.body-variant {
+  @apply text-sm leading-4  font-medium;
+  @layer -tracking-0.25;
+}

@@ -15,7 +15,7 @@ html {
   @layer -tracking-1;
 }
 .heading-m {
-  @apply text-2xl  font-bold leading-5 tracking-wide;
+  @apply text-2xl  font-bold leading-5 tracking-normal;
 }
 .heading-s {
   @apply text-base leading-4  font-bold;

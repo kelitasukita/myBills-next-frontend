@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -11,9 +12,16 @@ export default function Home() {
           <h2 className="text-lg text-gray-400 font-normal">Choose your login</h2>
         </div>
 
-        <div className="flex justify-center items-center mt-6 w-full h-11 mx-auto border border-gray-300 border-solid rounded-md">
-          <button>Login with google</button>
-        </div>
+        <button className="flex justify-center items-center mt-6 w-full h-11 mx-auto border border-gray-300 border-solid rounded-md relative bg-transparent z-0 transition-colors before:rounded-md before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-google-btn before:transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-x-100">
+          <Image
+            src="./google-48.svg"
+            width={32}
+            height={32}
+            alt="google icon"
+            className="mr-6 z-10 " />
+          Login with google
+        </button>
+
 
         <div className="mt-7 w-full flex justify-center items-center">
           <div className="border-t border-gray-300 border-solid w-3/5" />
@@ -21,7 +29,7 @@ export default function Home() {
           <div className="border-t border-gray-300 border-solid w-3/5" />
         </div>
 
-        <div className="mt-7">
+        <div className="mt-6">
           <label>Your email:</label>
           <input type="email" className="w-full h-11 border border-gray-300 border-solid rounded-md mt-1 mb-4" />
           <label>Your Password:</label>
@@ -30,6 +38,6 @@ export default function Home() {
 
         <button className="bg-violet-600 text-white mt-6 w-full h-11 mx-auto border border-gray-300 border-solid rounded-md">Login</button>
       </main>
-    </div>
+    </div >
   )
 }

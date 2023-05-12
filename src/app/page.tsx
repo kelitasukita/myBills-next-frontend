@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
-      <section className="text-center mb-1">
+    <div className="h-screen flex flex-col justify-center items-center">
+      <section className=" text-gray-500 text-center mb-1">
         <h1 className="text-gray-400 text-3xl font-bold">my.bill$</h1>
       </section>
-      <main className="bg-white w-4/5 h-55vh m-auto rounded-lg shadow-lg p-6">
+      <main className="bg-white w-4/5 max-w-lg h-55vh mx-auto rounded-lg shadow-lg p-6">
 
         <div className="text-center">
           <h2 className="text-lg text-gray-400 font-normal">Choose your login</h2>

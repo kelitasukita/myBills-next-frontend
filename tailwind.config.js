@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       height: {
         "55vh": "55vh",
+        18: "72px",
       },
       colors: {
         "google-btn": "#eb4335",

@@ -10,6 +10,9 @@ module.exports = {
       height: {
         "55vh": "55vh",
       },
+      colors: {
+        "google-btn": "#eb4335",
+      },
     },
   },
   plugins: [],

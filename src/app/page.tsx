@@ -31,9 +31,9 @@ export default function Home() {
 
         <div className="mt-6">
           <label>Your email:</label>
-          <input type="email" className="w-full h-11 border border-gray-300 border-solid rounded-md mt-1 mb-4" />
+          <input type="email" className="w-full h-11 border border-gray-300 border-solid rounded-md mt-1 mb-4 pl-2 focus:border-violet-600" />
           <label>Your Password:</label>
-          <input type="password" className="w-full h-11 border border-gray-300 border-solid rounded-md mt-1" />
+          <input type="password" className="w-full h-11 border border-gray-300 border-solid rounded-md mt-1 pl-2 focus:border-violet-600" />
         </div>
 
         <button className="bg-violet-600 text-white mt-6 w-full h-11 mx-auto border border-gray-300 border-solid rounded-md">Login</button>

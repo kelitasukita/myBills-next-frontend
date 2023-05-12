@@ -11,6 +11,9 @@ module.exports = {
         "55vh": "55vh",
         18: "72px",
       },
+      width: {
+        26: "104px",
+      },
       colors: {
         "google-btn": "#eb4335",
       },

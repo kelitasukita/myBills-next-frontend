@@ -43,16 +43,20 @@ export default function EditInvoice() {
             <input className="appearance-none rounded-full checked:bg-violet-600 border border-gray-300 h-6 w-6 mb-6" type="checkbox" />
 
             <label className="body-variant text-gray-400 mb-4  ">Installments</label>
-            <input className="border border-gray-300 h-12 rounded-md p-4 mb-6" type="number" />
-            <input className="border border-gray-300 h-12 rounded-md p-4 mb-6" type="number" />
+            <div className="flex justify-start items-center">
+              <input className="border border-gray-300 h-12 w-20 rounded-md p-4 mb-6" type="number" />
+              <span className="body-variant text-gray-400 text-center mx-2 h-10">of</span>
+              <input className="border border-gray-300 h-12 w-20 rounded-md p-4 mb-6" type="number" />
+            </div>
 
             <label className="body-variant text-gray-400 mb-4  ">Observation</label>
             <input className="border border-gray-300 h-12 rounded-md p-4 mb-6" type="text" />
           </form>
         </article>
 
+        <div className="h-16 bg-line bg-gradient-to-b from-transparent to-gray-200" />
 
-        <footer className="flex justify-between items-center w-full mt-14 p-6 bg-white">
+        <footer className="flex justify-between items-center w-full p-6 bg-white">
           <button className="heading-s text-gray-400 py-5 px-6 bg-gray-100 rounded-full">Cancel</button>
           <button className="heading-s text-white py-5 px-6 bg-violet-500 rounded-full">Save Changes</button>
         </footer>

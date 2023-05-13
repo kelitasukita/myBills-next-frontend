@@ -63,7 +63,7 @@ export default function EditInvoice() {
 
         <footer className="flex justify-between items-center w-full p-6 bg-white">
           <button className="heading-s text-gray-400 py-5 px-6 bg-gray-100 rounded-full">Cancel</button>
-          <button className="heading-s text-white py-5 px-6 bg-violet-500 rounded-full">Save Changes</button>
+          <button className="heading-s text-gray-100 py-5 px-6 bg-violet-500 rounded-full">Save Changes</button>
         </footer>
       </div>
     </>

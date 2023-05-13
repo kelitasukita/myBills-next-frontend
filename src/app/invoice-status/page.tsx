@@ -51,8 +51,8 @@ export default function InvoiceStatus() {
 
       <footer className="flex justify-between items-center w-full mt-14 p-6 bg-white">
         <button className="heading-s text-gray-400 py-5 px-6 bg-gray-100 rounded-full">Edit</button>
-        <button className="heading-s text-white py-5 px-6 bg-red-500 rounded-full">Delete</button>
-        <button className="heading-s text-white py-5 px-6 bg-violet-500 rounded-full">Mark as Paid</button>
+        <button className="heading-s text-gray-100 py-5 px-6 bg-red-500 rounded-full">Delete</button>
+        <button className="heading-s text-gray-100 py-5 px-6 bg-violet-500 rounded-full">Mark as Paid</button>
       </footer>
     </>
   )

@@ -36,11 +36,16 @@ export default function EditInvoice() {
             <label className="body-variant text-gray-400 mb-4  ">Due date</label>
             <input className="heading-s text-gray-800 bg-transparent border border-gray-300 h-12 rounded-md p-4 mb-6" type="date" />
 
-            <label className="body-variant text-gray-400 mb-4  ">Automatic Debit</label>
-            <input className="heading-s text-gray-800 appearance-none rounded-full checked:bg-violet-600 border border-gray-300 h-6 w-6 mb-6" type="checkbox" />
-
-            <label className="body-variant text-gray-400 mb-4  ">Recurrent</label>
-            <input className="heading-s text-gray-800 appearance-none rounded-full checked:bg-violet-600 border border-gray-300 h-6 w-6 mb-6" type="checkbox" />
+            <div className="grid grid-cols-2">
+              <div className="flex flex-col justify-start">
+                <label className="body-variant text-gray-400 mb-4">Automatic Debit</label>
+                <input className="heading-s text-gray-800 appearance-none rounded-full checked:bg-violet-600 border border-gray-300 h-6 w-6 mb-6" type="checkbox" />
+              </div>
+              <div className="flex flex-col">
+                <label className="body-variant text-gray-400 mb-4  ">Recurrent</label>
+                <input className="heading-s text-gray-800 appearance-none rounded-full checked:bg-violet-600 border border-gray-300 h-6 w-6 mb-6" type="checkbox" />
+              </div>
+            </div>
 
             <label className="body-variant text-gray-400 mb-4  ">Installments</label>
             <div className="flex justify-start items-center">

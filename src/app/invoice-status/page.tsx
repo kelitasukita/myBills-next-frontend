@@ -1,14 +1,12 @@
 import Image from "next/image";
+import GoBackBtn from "../components/goBackBtn";
 import Navbar from "../components/navbar";
 
 export default function InvoiceStatus() {
   return (
     <>
       <Navbar />
-      <button className="flex justify-center items-center float-left w-1/3 mx-auto mt-3 py-5 mb-3">
-        <Image src="/icon-arrow-left.svg" alt="left arrow" width="7" height="10" />
-        <p className="heading-s ml-7">Go back</p>
-      </button>
+      <GoBackBtn />
 
       <article className="flex justify-between items-center w-11/12 mx-auto p-6 rounded-lg bg-white">
         <span className="body-variant text-gray-400">Status</span>

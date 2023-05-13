@@ -8,6 +8,7 @@ html {
 
 :focus {
   outline: none;
+  border: solid 1px #7c3aed;
 }
 
 .heading-l {

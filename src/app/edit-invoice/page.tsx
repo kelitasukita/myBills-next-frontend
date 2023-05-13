@@ -22,11 +22,11 @@ export default function EditInvoice() {
 
             <label className="body-variant text-gray-400 mb-4  ">Currency</label>
             <div className="flex justify-start items-center mb-8">
-              <input className="border border-gray-300 h-5 w-5 mr-1 rounded-md " type="radio" name="currency" />
+              <input className="appearance-none rounded-full checked:bg-violet-600 border border-gray-300 h-5 w-5 mr-1 " type="radio" name="currency" />
               <label>EUR</label>
-              <input className="border border-gray-300 h-5 w-5 mr-1 ml-4 rounded-md " type="radio" name="currency" />
+              <input className="appearance-none rounded-full checked:bg-violet-600 border border-gray-300 h-5 w-5 mr-1 ml-4" type="radio" name="currency" />
               <label>BRL</label>
-              <input className="border border-gray-300 h-5 w-5 mr-1 ml-4 rounded-md " type="radio" name="currency" />
+              <input className="appearance-none rounded-full checked:bg-violet-600 border border-gray-300 h-5 w-5 mr-1 ml-4" type="radio" name="currency" />
               <label>USD</label>
             </div>
 
@@ -37,10 +37,10 @@ export default function EditInvoice() {
             <input className="border border-gray-300 h-12 rounded-md p-4 mb-6" type="date" />
 
             <label className="body-variant text-gray-400 mb-4  ">Automatic Debit</label>
-            <input className="border border-gray-300 h-5 w-5 mb-6" type="checkbox" />
+            <input className="appearance-none rounded-full checked:bg-violet-600 border border-gray-300 h-6 w-6 mb-6" type="checkbox" />
 
             <label className="body-variant text-gray-400 mb-4  ">Recurrent</label>
-            <input className="border border-gray-300 h-5 w-5 mb-6" type="checkbox" />
+            <input className="appearance-none rounded-full checked:bg-violet-600 border border-gray-300 h-6 w-6 mb-6" type="checkbox" />
 
             <label className="body-variant text-gray-400 mb-4  ">Installments</label>
             <input className="border border-gray-300 h-12 rounded-md p-4 mb-6" type="number" />

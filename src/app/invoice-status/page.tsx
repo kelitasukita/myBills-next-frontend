@@ -1,4 +1,5 @@
 import Image from "next/image";
+import DeleteModal from "../components/DeleteModal";
 import GoBackBtn from "../components/goBackBtn";
 import Navbar from "../components/navbar";
 
@@ -7,7 +8,7 @@ export default function InvoiceStatus() {
     <>
       <Navbar />
       <GoBackBtn />
-
+      {/* <DeleteModal /> */}
       <article className="flex justify-between items-center w-11/12 mx-auto p-6 rounded-lg bg-white">
         <span className="body-variant text-gray-400">Status</span>
         <div className="flex justify-center items-center w-26 h-11 mr-0 bg-orange-500 rounded-md bg-opacity-10 sm:mt-0 sm:m-auto">

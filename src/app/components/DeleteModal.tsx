@@ -1,3 +1,5 @@
+import Button from "./button";
+
 export default function DeleteModal() {
   return (
     <main className="fixed inset-0 bg-black bg-opacity-70 z-30">
@@ -8,8 +10,8 @@ export default function DeleteModal() {
           This action cannot be undone.
         </p>
         <div className="mt-6 float-right">
-          <button className="heading-s text-gray-400 py-5 px-6 mr-4 bg-gray-100 rounded-full">Cancel</button>
-          <button className="heading-s text-gray-100 py-5 px-6 bg-red-500 rounded-full">Delete</button>
+          <Button textColor="text-gray-400" bgColor="bg-gray-100" name="Cancel" />
+          <Button textColor="text-gray-100" bgColor="bg-red-500" name="Delete" />
         </div>
       </article>
     </main>

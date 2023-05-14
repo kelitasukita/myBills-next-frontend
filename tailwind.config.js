@@ -16,6 +16,7 @@ module.exports = {
       },
       colors: {
         "google-btn": "#eb4335",
+        "input-focus": "#7c3aed",
       },
     },
   },

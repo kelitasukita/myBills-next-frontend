@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "../components/button";
 import DeleteModal from "../components/DeleteModal";
 import GoBackBtn from "../components/goBackBtn";
 import Navbar from "../components/navbar";
@@ -51,9 +52,9 @@ export default function InvoiceStatus() {
       </main>
 
       <footer className="flex justify-between items-center w-full mt-14 p-6 bg-white">
-        <button className="heading-s text-gray-400 py-5 px-6 bg-gray-100 rounded-full">Edit</button>
-        <button className="heading-s text-gray-100 py-5 px-6 bg-red-500 rounded-full">Delete</button>
-        <button className="heading-s text-gray-100 py-5 px-6 bg-violet-500 rounded-full">Mark as Paid</button>
+        <Button textColor="text-gray-400" bgColor="bg-gray-200" name="Edit" />
+        <Button textColor="text-gray-100" bgColor="bg-red-500" name="Delete" />
+        <Button textColor="text-gray-100" bgColor="bg-violet-500" name="Mark as Paid" />
       </footer>
     </>
   )

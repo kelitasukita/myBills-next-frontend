@@ -53,7 +53,7 @@ export default function InvoiceStatus() {
               <span className="heading-s text-gray-800 ">This is an optional information</span>
             </div>
           </section>
-          <div className="flex justify-around items-center mt-8 mb-4 h-20 rounded-lg  bg-gray-700">
+          <div className="flex justify-between px-6 items-center mt-8 mb-4 h-20 rounded-lg  bg-gray-700">
             <span className="body-variant text-white">Value</span>
             <strong className="heading-l text-white">€ 1800.00</strong>
           </div>

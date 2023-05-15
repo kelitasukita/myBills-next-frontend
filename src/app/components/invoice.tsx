@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Invoice() {
   return (
-    <article className="grid grid-cols-3 grid-rows-3 mt-8 w-11/12 mx-auto h-32 p-6 bg-white rounded-lg shadow-md hover:border hover:border-violet-600 hover:border-solid md:grid md:grid-cols-5 md:grid-rows-1 md:h-18 md:justify-center md:items-center md:mt-16 md:px-6 desktop:mx-auto desktop:w-730">
+    <article className="grid grid-cols-3 grid-rows-3 mt-8 w-11/12 mx-auto h-32 p-6 bg-white rounded-lg shadow-md hover:border hover:border-violet-600 hover:border-solid md:grid md:grid-cols-5 md:grid-rows-1 md:h-18 md:justify-center md:items-center md:mt-16 lg:w-full">
       <h2 className="heading-s text-gray-800">
         <span className="text-gray-400 font-medium ">#</span>
         Mortgage

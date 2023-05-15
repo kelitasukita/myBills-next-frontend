@@ -25,7 +25,7 @@ export default function AddInvoice() {
   }, []);
 
   return (
-    <article className="flex justify-between items-center w-11/12 mx-auto mt-6 lg:mt-20">
+    <article className="flex justify-between items-center w-11/12 mx-auto mt-6 lg:mt-20 lg:w-full">
       <div>
         <h2 className="text-gray-800 heading-m mb-1">Invoices</h2>
         <div className="text-gray-400 body-variant mt-3">

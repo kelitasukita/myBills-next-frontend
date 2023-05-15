@@ -11,11 +11,18 @@ export default function InvoiceStatus() {
       <section className="flex flex-col w-11/12 lg:w-736 mx-auto">
         <GoBackBtn />
         {/* <DeleteModal /> */}
-        <article className="flex justify-between items-center w-full mx-auto p-6 rounded-lg bg-white">
-          <span className="body-variant text-gray-400">Status</span>
-          <div className="flex justify-center items-center w-26 h-11 mr-0 bg-orange-500 rounded-md bg-opacity-10 sm:mt-0 sm:m-auto">
-            <div className="w-2 h-2 rounded-full bg-orange-400"></div>
-            <span className="heading-s ml-2 rounded-md text-orange-400">Pending</span>
+        <article className="flex justify-between items-center w-full mx-auto p-6 rounded-lg bg-white ">
+          <div className="w-full flex justify-between items-center md:justify-start">
+            <span className="body-variant text-gray-400 md:mr-5">Status</span>
+            <div className="flex justify-center items-center w-26 h-11 bg-orange-500 rounded-md bg-opacity-10">
+              <div className="w-2 h-2 rounded-full bg-orange-400"></div>
+              <span className="heading-s ml-2 rounded-md text-orange-400">Pending</span>
+            </div>
+          </div>
+          <div className="hidden md:flex">
+            <Button textColor="text-gray-400" bgColor="bg-gray-200" name="Edit" />
+            <Button textColor="text-gray-100" bgColor="bg-red-500" name="Delete" />
+            <Button textColor="text-gray-100" bgColor="bg-violet-500" name="Mark as Paid" />
           </div>
         </article>
 

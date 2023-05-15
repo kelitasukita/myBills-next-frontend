@@ -13,6 +13,7 @@ module.exports = {
       },
       width: {
         26: "104px",
+        736: "736px",
       },
       colors: {
         "google-btn": "#eb4335",

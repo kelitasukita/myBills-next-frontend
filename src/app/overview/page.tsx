@@ -5,11 +5,13 @@ import Navbar from "../components/navbar";
 
 export default function Overview() {
   return (
-    <>
+    <div className="lg:flex">
       <Navbar />
-      <AddInvoice />
-      <Invoice />
-      {/* <EmptyInvoice /> */}
-    </>
+      <div className="lg:w-736 mx-auto">
+        <AddInvoice />
+        <Invoice />
+        {/* <EmptyInvoice /> */}
+      </div>
+    </div>
   )
 }

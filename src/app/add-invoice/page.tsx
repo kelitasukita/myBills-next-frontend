@@ -3,7 +3,7 @@ import Navbar from "../components/navbar";
 
 export default function AddInvoice() {
   return (
-    <>
+    <main>
       <Navbar />
       <div className="flex flex-col bg-white">
         <div>
@@ -65,6 +65,6 @@ export default function AddInvoice() {
           <button className="text-sm font-bold text-gray-100 py-5 px-4 bg-violet-500 rounded-full">Save & Send</button>
         </footer>
       </div>
-    </>
+    </main>
   )
 }

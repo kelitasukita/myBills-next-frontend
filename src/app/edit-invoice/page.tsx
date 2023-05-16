@@ -7,7 +7,7 @@ export default function EditInvoice() {
     <>
       <Navbar />
       <div className="flex flex-col bg-white">
-        <div>
+        <div className="pl-6">
           <GoBackBtn />
         </div>
         <article className="p-6">

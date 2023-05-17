@@ -12,7 +12,7 @@ export default function Navbar() {
           <Image src="/icon-moon.svg" width="20" height="20" alt="dark mode moon" />
         </div>
 
-        <div className="border-r border-solid border-gray-600 h-18 lg:border-b lg:w-26 lg:border-r-0 lg:h-0" />
+        <div className="border-r border-solid border-gray-600 h-18 lg:border-b lg:w-24 lg:border-r-0 lg:h-0" />
 
         <div>
           <Image src="/avatar.jpg" width="32" height="32" alt="avatar image"

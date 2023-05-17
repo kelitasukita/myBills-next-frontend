@@ -3,10 +3,10 @@ import Navbar from "./navbar";
 
 export default function EditScreenModal() {
   return (
-    <div className="lg:flex relative">
+    <div className="lg:flex bg-black bg-opacity-50">
       <Navbar />
-      <div className="w-screen md:w-4/5 lg:left-24 lg:w-2/5">
-        <div className="flex flex-col bg-white rounded-r-3xl">
+      <div className="w-screen">
+        <div className="flex flex-col bg-white rounded-r-3xl md:w-4/5 lg:w-2/5">
           <article className="p-6 lg:px-8 lg:pt-14">
             <header className="flex justify-start items-center">
               <h1 className="heading-m text-gray-800">Edit </h1>

@@ -7,15 +7,14 @@ import Navbar from "../components/navbar";
 
 export default function Overview() {
   return (
-
-    <EditScreenModal />
-    // <div className="lg:flex">
-    //   {/* <Navbar />
-    //   <div className="lg:w-736 mx-auto">
-    //     <AddInvoice />
-    //     <Invoice />
-    //     {/* <EmptyInvoice /> */}
-    //   </div> */}
-    // </div>
+    // <EditScreenModal />
+    <div className="lg:flex">
+      <Navbar />
+      <div className="lg:w-736 mx-auto">
+        <AddInvoice />
+        <Invoice />
+        {/* <EmptyInvoice /> */}
+      </div>
+    </div>
   )
 }

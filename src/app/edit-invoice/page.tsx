@@ -62,7 +62,7 @@ export default function EditInvoice() {
 
         <div className="h-16 bg-line bg-gradient-to-b from-transparent to-gray-200" />
 
-        <footer className="flex justify-around items-center w-full p-6 bg-white">
+        <footer className="flex justify-end items-center w-full p-6 bg-white">
           <Button textColor="text-gray-400" bgColor="bg-gray-100" name="Cancel" />
           <Button textColor="text-gray-100" bgColor="bg-violet-500" name="Save Changes" />
         </footer>

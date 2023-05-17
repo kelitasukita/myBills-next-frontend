@@ -4,8 +4,10 @@ import EmptyInvoice from "../components/emptyInvoice";
 import Invoice from "../components/invoice";
 import Navbar from "../components/navbar";
 
+
 export default function Overview() {
   return (
+
     <EditScreenModal />
     // <div className="lg:flex">
     //   {/* <Navbar />

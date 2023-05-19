@@ -4,11 +4,11 @@ export default function Navbar() {
   return (
     <nav className="flex justify-between items-center bg-gray-700 lg:min-h-screen lg:w-24 lg:flex-col lg:rounded-r-3xl">
       <div className="">
-        <Image src="/nav-logo.svg" width="72" height="72" alt="logo" className="lg:w-full" />
+        <Image src="/nav-logo.svg" width="72" height="72" alt="logo" className="cursor-pointer lg:w-full" />
       </div>
 
       <div className="flex items-center lg:flex-col">
-        <div className="mr-6 lg:mr-0 lg:mb-6">
+        <div className="cursor-pointer mr-6 lg:mr-0 lg:mb-6">
           <Image src="/icon-moon.svg" width="20" height="20" alt="dark mode moon" />
         </div>
 
@@ -16,7 +16,7 @@ export default function Navbar() {
 
         <div>
           <Image src="/avatar.jpg" width="32" height="32" alt="avatar image"
-            className="rounded-2xl mx-6 lg:my-6 lg:w-10 lg:h-10 lg:rounded-full" />
+            className="cursor-pointer rounded-2xl mx-6 lg:my-6 lg:w-10 lg:h-10 lg:rounded-full" />
         </div>
       </div>
     </nav>

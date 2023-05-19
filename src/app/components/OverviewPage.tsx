@@ -39,7 +39,7 @@ export default function Overview() {
       </div>
 
       <div className="flex justify-center items-center">
-        <div className="relative">
+        <div className="relative cursor-pointer">
 
           <div className="flex justify-between items-center mr-6 md:mr-10">
             <p className="text-base font-bold text-gray-800 leading-4 mr-4 text-left">
@@ -53,18 +53,18 @@ export default function Overview() {
             <Image src="/icon-arrow-down.svg" alt="down arrow" width="12" height="12" />
           </div>
 
-          <div>
+          <div className="">
             <div className="absolute top-6 md:top-8 right-5 md:right-10 flex flex-col py-4 pl-4 justify-around w-40 h-28 bg-white shadow-md rounded-lg shrink-0">
-              <label className="flex justify-start items-center heading-s text-gray-800">
-                < input type="checkbox" className="mr-3 relative appearance-none w-4 h-4 hover:border hover:border-violet-600 bg-violet-100 rounded-sm focus:outline-none checked:bg-violet-500 after:content-[''] after:w-full after:h-full after:absolute after:left-0 after:top-0 after:bg-center after:bg-no-repeat after:bg-[length:10px] checked:after:bg-[url('../../public/checked.svg')]" />
+              <label className="flex justify-start items-center heading-s text-gray-800 cursor-pointer">
+                < input type="checkbox" className="cursor-pointer mr-3 relative appearance-none w-4 h-4 hover:border hover:border-violet-600 bg-violet-100 rounded-sm focus:outline-none checked:bg-violet-500 after:content-[''] after:w-full after:h-full after:absolute after:left-0 after:top-0 after:bg-center after:bg-no-repeat after:bg-[length:10px] checked:after:bg-[url('../../public/checked.svg')]" />
                 Draft
               </label>
-              <label className="flex justify-start items-center heading-s text-gray-800">
-                < input type="checkbox" className="mr-3 relative appearance-none w-4 h-4 hover:border hover:border-violet-600 bg-violet-100 rounded-sm focus:outline-none checked:bg-violet-500 after:content-[''] after:w-full after:h-full after:absolute after:left-0 after:top-0 after:bg-center after:bg-no-repeat after:bg-[length:10px] checked:after:bg-[url('../../public/checked.svg')]" />
+              <label className="flex justify-start items-center heading-s text-gray-800 cursor-pointer">
+                < input type="checkbox" className="cursor-pointer mr-3 relative appearance-none w-4 h-4 hover:border hover:border-violet-600 bg-violet-100 rounded-sm focus:outline-none checked:bg-violet-500 after:content-[''] after:w-full after:h-full after:absolute after:left-0 after:top-0 after:bg-center after:bg-no-repeat after:bg-[length:10px] checked:after:bg-[url('../../public/checked.svg')]" />
                 Pending
               </label>
-              <label className="flex justify-start items-center heading-s text-gray-800">
-                < input type="checkbox" className="mr-3 relative appearance-none w-4 h-4 hover:border hover:border-violet-600 bg-violet-100 rounded-sm focus:outline-none checked:bg-violet-500 after:content-[''] after:w-full after:h-full after:absolute after:left-0 after:top-0 after:bg-center after:bg-no-repeat after:bg-[length:10px] checked:after:bg-[url('../../public/checked.svg')]" />
+              <label className="flex justify-start items-center heading-s text-gray-800 cursor-pointer" >
+                < input type="checkbox" className="cursor-pointer mr-3 relative appearance-none w-4 h-4 hover:border hover:border-violet-600 bg-violet-100 rounded-sm focus:outline-none checked:bg-violet-500 after:content-[''] after:w-full after:h-full after:absolute after:left-0 after:top-0 after:bg-center after:bg-no-repeat after:bg-[length:10px] checked:after:bg-[url('../../public/checked.svg')]" />
                 Paid
               </label>
             </div>
@@ -73,7 +73,7 @@ export default function Overview() {
 
         <div>
           <div>
-            <div className="flex justify-end items-center w-90 bg-violet-500 rounded-full p-1.5">
+            <div className="cursor-pointer flex justify-end items-center w-90 bg-violet-500 rounded-full p-1.5">
               <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full " >
                 <Image className="" src="/icon-plus.svg" alt="plus signal" width="12" height="12" />
               </div>

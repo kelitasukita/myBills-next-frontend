@@ -1,4 +1,4 @@
-import AddInvoice from "../components/addInvoice";
+import OverviewPage from "../components/OverviewPage";
 import EditScreenModal from "../components/EditScreenModal";
 import EmptyInvoice from "../components/emptyInvoice";
 import Invoice from "../components/invoice";
@@ -11,7 +11,7 @@ export default function Overview() {
     <div className="lg:flex">
       <Navbar />
       <div className="lg:w-736 mx-auto">
-        <AddInvoice />
+        <OverviewPage />
         <Invoice />
         {/* <EmptyInvoice /> */}
       </div>

@@ -54,17 +54,17 @@ export default function Overview() {
           </div>
 
           <div>
-            <div className="absolute top-6 md:top-8 right-5 md:right-10 flex flex-col py-4 pl-4 justify-around w-40 h-28 bg-white shadow-md rounded-lg">
+            <div className="absolute top-6 md:top-8 right-5 md:right-10 flex flex-col py-4 pl-4 justify-around w-40 h-28 bg-white shadow-md rounded-lg shrink-0">
               <label className="flex justify-start items-center heading-s text-gray-800">
-                < input type="checkbox" className="mr-3 appearance-none w-4 h-4 hover:border hover:border-violet-600 bg-violet-100 rounded-sm" />
+                < input type="checkbox" className="mr-3 relative appearance-none w-4 h-4 hover:border hover:border-violet-600 bg-violet-100 rounded-sm focus:outline-none checked:bg-violet-500 after:content-[''] after:w-full after:h-full after:absolute after:left-0 after:top-0 after:bg-center after:bg-no-repeat after:bg-[length:10px] checked:after:bg-[url('../../public/checked.svg')]" />
                 Draft
               </label>
               <label className="flex justify-start items-center heading-s text-gray-800">
-                < input type="checkbox" className="mr-3 appearance-none w-4 h-4 hover:border hover:border-violet-600 bg-violet-100 rounded-sm" />
+                < input type="checkbox" className="mr-3 relative appearance-none w-4 h-4 hover:border hover:border-violet-600 bg-violet-100 rounded-sm focus:outline-none checked:bg-violet-500 after:content-[''] after:w-full after:h-full after:absolute after:left-0 after:top-0 after:bg-center after:bg-no-repeat after:bg-[length:10px] checked:after:bg-[url('../../public/checked.svg')]" />
                 Pending
               </label>
               <label className="flex justify-start items-center heading-s text-gray-800">
-                < input type="checkbox" className="mr-3 appearance-none w-4 h-4 hover:border hover:border-violet-600 bg-violet-100 rounded-sm" />
+                < input type="checkbox" className="mr-3 relative appearance-none w-4 h-4 hover:border hover:border-violet-600 bg-violet-100 rounded-sm focus:outline-none checked:bg-violet-500 after:content-[''] after:w-full after:h-full after:absolute after:left-0 after:top-0 after:bg-center after:bg-no-repeat after:bg-[length:10px] checked:after:bg-[url('../../public/checked.svg')]" />
                 Paid
               </label>
             </div>

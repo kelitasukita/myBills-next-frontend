@@ -74,12 +74,12 @@ export default function Overview() {
 
         <div>
           <div>
-            <div className="cursor-pointer flex justify-end items-center w-90 bg-violet-500 rounded-full p-1.5">
+            <div className="cursor-pointer flex justify-end items-center w-90 bg-violet-500 hover:bg-violet-400 hover:transition hover:duration-400 rounded-full p-1.5">
               <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full " >
                 <Image className="" src="/icon-plus.svg" alt="plus signal" width="12" height="12" />
               </div>
               <div>
-                <p className="text-sm text-white font-bold ml-1 ">
+                <p className="text-xs text-white font-bold pl-3 pr-2 ">
                   {width > 639
                     ?
                     (<span>New Invoice</span>)

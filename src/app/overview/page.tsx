@@ -1,6 +1,7 @@
 import OverviewPage from "../components/OverviewPage";
 import Invoice from "../components/invoice";
 import Navbar from "../components/navbar";
+import EmptyInvoice from "../components/emptyInvoice";
 
 export default function Overview() {
   return (

@@ -10,10 +10,12 @@ module.exports = {
       height: {
         "55vh": "55vh",
         18: "72px",
+        84: "342px",
       },
       width: {
         18: "72px",
         26: "104px",
+
         736: "736px",
       },
       colors: {

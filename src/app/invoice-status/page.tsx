@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Button from "../components/button";
-import DeleteModal from "../components/DeleteModal";
 import GoBackBtn from "../components/goBackBtn";
 import Navbar from "../components/navbar";
 

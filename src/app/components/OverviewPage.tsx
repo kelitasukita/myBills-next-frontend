@@ -53,7 +53,8 @@ export default function Overview() {
             <Image src="/icon-arrow-down.svg" alt="down arrow" width="12" height="12" />
           </div>
 
-          <div className="">
+          {/*------------------------------------- DROPDOWN MENU -------------------------------- */}
+          {/* <div className="">
             <div className="absolute top-6 md:top-8 right-5 md:right-10 flex flex-col py-4 pl-4 justify-around w-40 h-28 bg-white shadow-md rounded-lg shrink-0">
               <label className="flex justify-start items-center heading-s text-gray-800 cursor-pointer">
                 < input type="checkbox" className="cursor-pointer mr-3 relative appearance-none w-4 h-4 hover:border hover:border-violet-600 bg-violet-100 rounded-sm focus:outline-none checked:bg-violet-500 after:content-[''] after:w-full after:h-full after:absolute after:left-0 after:top-0 after:bg-center after:bg-no-repeat after:bg-[length:10px] checked:after:bg-[url('../../public/checked.svg')]" />
@@ -68,7 +69,7 @@ export default function Overview() {
                 Paid
               </label>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div>

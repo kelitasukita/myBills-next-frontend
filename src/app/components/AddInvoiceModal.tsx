@@ -3,7 +3,7 @@ import Navbar from "./navbar";
 
 export default function AddInvoiceModal() {
   return (
-    <div className="lg:flex bg-black bg-opacity-50">
+    <div className="lg:flex bg-black bg-opacity-50 fixed top-0 left-0 w-screen lg:min-h-screen z-40">
       <Navbar />
       <div className="flex flex-col bg-white rounded-r-3xl md:pl-4 md:w-4/5 lg:w-2/5 lg:pl-0">
         <article className="p-6 lg:px-8 lg:pt-14">

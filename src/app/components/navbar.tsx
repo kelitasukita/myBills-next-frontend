@@ -16,7 +16,7 @@ export default function Navbar() {
 
         <div>
           <Image src="/avatar.jpg" width="32" height="32" alt="avatar image"
-            className="cursor-pointer rounded-2xl mx-6 lg:my-6 lg:w-10 lg:h-10 lg:rounded-full" />
+            className="cursor-pointer rounded-2xl mx-6 lg:my-6 lg:w-auto lg:h-auto lg:rounded-full" />
         </div>
       </div>
     </nav>

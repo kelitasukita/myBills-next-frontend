@@ -5,7 +5,7 @@ import EmptyInvoice from "../components/EmptyInvoice";
 
 export default function Overview() {
   return (
-    <div className="lg:flex">
+    <div className="lg:flex relative">
       <Navbar />
       <div className="lg:w-736 mx-auto">
         <HeaderOverview />

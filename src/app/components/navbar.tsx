@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center bg-gray-700 lg:min-h-screen lg:w-24 lg:flex-col lg:rounded-r-3xl">
-      <div className="">
+    <nav className="flex justify-between items-center bg-gray-700 lg:w-24 lg:flex-col lg:rounded-r-3xl">
+      <div>
         <Image src="/nav-logo.svg" width="72" height="72" alt="logo" className="cursor-pointer lg:w-full" />
       </div>
 

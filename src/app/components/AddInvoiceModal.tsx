@@ -3,11 +3,11 @@ import Navbar from "./navbar";
 
 export default function AddInvoiceModal() {
   return (
-    <div className="lg:flex bg-black bg-opacity-50 fixed top-0 left-0 w-screen lg:min-h-screen z-40">
+    <div className="lg:flex bg-black bg-opacity-50 absolute top-0 left-0 w-screen z-40">
       <Navbar />
-      <div className="flex flex-col bg-white rounded-r-3xl md:pl-4 md:w-4/5 lg:w-2/5 lg:pl-0">
+      <div className="flex flex-col bg-white md:rounded-r-3xl md:pl-4 md:w-4/5 lg:w-2/5 lg:pl-0">
         <article className="p-6 lg:px-8 lg:pt-14">
-          <header className="">
+          <header>
             <h1 className="heading-m text-gray-800">New Invoice</h1>
           </header>
 
@@ -56,11 +56,11 @@ export default function AddInvoiceModal() {
 
         <div className="h-16 bg-line bg-gradient-to-b from-transparent to-gray-200 lg:hidden" />
 
-        <footer className="flex justify-between items-center w-full h-28 bg-white lg:mt-5 p-6 rounded-r-3xl">
+        <footer className="flex md:justify-between items-center w-full h-28 bg-white lg:mt-5 p-6 md:rounded-r-3xl">
           <div>
             <Button textColor="text-gray-400" bgColor="bg-gray-100" name="Discard" />
           </div>
-          <div>
+          <div className="flex">
             <Button textColor="text-gray-400" bgColor="bg-gray-700" name="Save as Draft" />
             <Button textColor="text-gray-100" bgColor="bg-violet-500" name="Save & Send" />
           </div>

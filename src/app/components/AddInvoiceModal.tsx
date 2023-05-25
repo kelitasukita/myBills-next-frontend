@@ -2,6 +2,7 @@ import Button from "./Button";
 import Navbar from "./navbar";
 
 export default function AddInvoiceModal() {
+
   return (
     <div className="lg:flex bg-black bg-opacity-50 absolute top-0 left-0 w-screen z-40">
       <Navbar />
@@ -58,7 +59,11 @@ export default function AddInvoiceModal() {
 
         <footer className="flex md:justify-between items-center w-full h-28 bg-white lg:mt-5 p-6 md:rounded-r-3xl">
           <div>
-            <Button textColor="text-gray-400" bgColor="bg-gray-100" name="Discard" />
+            <Button
+              textColor="text-gray-400"
+              bgColor="bg-gray-100"
+              name="Discard"
+            />
           </div>
           <div className="flex">
             <Button textColor="text-gray-400" bgColor="bg-gray-700" name="Save as Draft" />

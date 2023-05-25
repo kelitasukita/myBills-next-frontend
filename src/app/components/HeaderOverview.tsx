@@ -14,7 +14,7 @@ function getSize() {
 
 export default function HeaderOverview() {
   const [width, setWidth] = useState(0);
-  const [isInvoiceModalOpen, setInvoiceModalOpen] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
 
   useEffect(() => {
     function handleResize() {
@@ -28,12 +28,12 @@ export default function HeaderOverview() {
   }, []);
 
   const handleModal = () => {
-    setInvoiceModalOpen(true);
+    setOpenModal(true);
   }
 
   return (
     <>
-      {isInvoiceModalOpen && <AddInvoiceModal />}
+      {openModal && <AddInvoiceModal />}
       <article className="flex justify-between items-center w-11/12 mx-auto mt-8 sm:mt-16 lg:mt-20 lg:w-full">
         <div>
           <h2 className="text-gray-800 heading-m mb-1">Invoices</h2>

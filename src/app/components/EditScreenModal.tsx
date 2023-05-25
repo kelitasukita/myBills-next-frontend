@@ -1,4 +1,4 @@
-import Button from "./button";
+import Button from "./Button";
 import Navbar from "./navbar";
 
 export default function EditScreenModal() {

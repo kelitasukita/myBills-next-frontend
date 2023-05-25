@@ -1,5 +1,5 @@
-import Button from "../components/button";
-import GoBackBtn from "../components/goBackBtn";
+import Button from "../components/Button";
+import GoBackBtn from "../components/GoBackBtn";
 import Navbar from "../components/navbar";
 
 export default function InvoiceStatus() {

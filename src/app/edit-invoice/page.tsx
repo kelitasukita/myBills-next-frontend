@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from "react";
 
-import Button from "../components/button";
+import Button from "../components/Button";
 import EditScreenModal from "../components/EditScreenModal";
-import GoBackBtn from "../components/goBackBtn";
+import GoBackBtn from "../components/GoBackBtn";
 import Navbar from "../components/navbar";
 
 export default function EditInvoice() {

@@ -1,4 +1,5 @@
 'use client';
+import { useEffect, useState } from "react";
 import Button from "../components/Button";
 import GoBackBtn from "../components/GoBackBtn";
 import Navbar from "../components/navbar";
@@ -17,12 +18,37 @@ type FormData = {
   paid: boolean;
 }
 
+function getSize() {
+  if (typeof window !== "undefined") {
+    return window.innerWidth;
+  }
+  return 0;
+}
+
 export default function AddInvoice() {
+
+  // ----------------------------------GETTING SCREEN SIZE----------------------------------
+  const [width, setWidth] = useState(0);
+  const [openModal, setOpenModal] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      setWidth(getSize());
+      console.log(getSize());
+    }
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    // return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  //------------------------------------REACT HOOK FORM--------------------------------------
   const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
 
   const onSubmit: SubmitHandler<FormData> = (data) => {
     console.log(data, 'teste');
   }
+
 
   return (
     <main>

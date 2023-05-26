@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import Button from "../components/Button";
 import EditScreenModal from "../components/EditScreenModal";
 import GoBackBtn from "../components/GoBackBtn";
-import Navbar from "../components/navbar";
 
 export default function EditInvoice() {
 
@@ -33,7 +32,7 @@ export default function EditInvoice() {
       {width < 640
         ?
         (<main className="md:hidden lg:hidden">
-          <Navbar />
+
           <div className="flex flex-col bg-white">
             <div className="pl-6">
               <GoBackBtn />

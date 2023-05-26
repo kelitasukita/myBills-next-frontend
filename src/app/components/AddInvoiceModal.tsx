@@ -1,11 +1,22 @@
 import Button from "./Button";
-import Navbar from "./navbar";
+
+type FormData = {
+  automaticDebit: boolean;
+  currency: string;
+  currentInstallment: number;
+  description: string;
+  dueDate: Date;
+  installments: number;
+  obs: string;
+  recurrent: boolean;
+  value: number;
+  paid: boolean;
+}
 
 export default function AddInvoiceModal() {
 
   return (
-    <div className="lg:flex bg-black bg-opacity-50 absolute top-0 left-0 w-screen z-40">
-      <Navbar />
+    <div className="lg:flex bg-black bg-opacity-50 absolute top-0 left-0 w-screen">
       <div className="flex flex-col bg-white md:rounded-r-3xl md:pl-4 md:w-4/5 lg:w-2/5 lg:pl-0">
         <article className="p-6 lg:px-8 lg:pt-14">
           <header>

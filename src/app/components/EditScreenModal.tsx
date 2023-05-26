@@ -1,10 +1,8 @@
 import Button from "./Button";
-import Navbar from "./navbar";
 
 export default function EditScreenModal() {
   return (
     <div className="lg:flex bg-black bg-opacity-50">
-      <Navbar />
       <div className="flex flex-col bg-white rounded-r-3xl md:pl-4 md:w-4/5 lg:w-2/5 lg:pl-0">
         <article className="p-6 lg:px-8 lg:pt-14">
           <header className="flex justify-start items-center">

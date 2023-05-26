@@ -1,11 +1,9 @@
 import Button from "../components/Button";
 import GoBackBtn from "../components/GoBackBtn";
-import Navbar from "../components/navbar";
 
 export default function InvoiceStatus() {
   return (
     <main className="lg:flex">
-      <Navbar />
       <section className="flex flex-col w-11/12 lg:w-736 mx-auto mt-4 md:mt-6">
         <GoBackBtn />
         <article className="flex justify-between items-center w-full mx-auto p-6 rounded-lg bg-white ">

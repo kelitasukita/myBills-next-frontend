@@ -1,9 +1,8 @@
 'use client';
-import { useState } from "react";
 import Button from "../components/Button";
 import GoBackBtn from "../components/GoBackBtn";
 import Navbar from "../components/navbar";
-import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
+import { SubmitHandler, useForm } from "react-hook-form";
 
 type FormData = {
   automaticDebit: boolean;

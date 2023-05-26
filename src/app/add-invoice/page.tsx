@@ -30,7 +30,7 @@ export default function AddInvoice() {
   return (
 
     <main className="lg:ml-24 bg-black bg-opacity-50">
-      <div className="flex flex-col bg-white md:w-4/5 md:rounded-r-3xl lg:w-2/5 lg:left-24">
+      <div className="flex flex-col bg-white md:w-4/5 md:rounded-r-3xl lg:w-2/4 xl:w-2/5 lg:left-24">
         <div className="pl-6 md:ml-4 lg:ml-0">
           <GoBackBtn />
         </div>
@@ -126,7 +126,7 @@ export default function AddInvoice() {
 
         <div className="h-16 bg-line bg-gradient-to-b from-transparent to-gray-200" />
 
-        <footer className="flex md:justify-between items-center w-full h-28 bg-white lg:m-0 px-6 md:rounded-r-3xl">
+        <footer className="flex justify-between items-center w-full h-28 bg-white lg:m-0 pl-4 pr-6 md:rounded-r-3xl">
           <div>
             <Button
               textColor="text-gray-400"

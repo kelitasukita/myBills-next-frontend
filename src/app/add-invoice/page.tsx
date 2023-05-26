@@ -19,7 +19,7 @@ type FormData = {
 }
 
 export default function AddInvoice() {
-  const { register, handleSubmit } = useForm<FormData>();
+  const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
 
   const onSubmit: SubmitHandler<FormData> = (data) => {
     console.log(data, 'teste');
@@ -39,33 +39,70 @@ export default function AddInvoice() {
 
           <div className="flex flex-col mt-12">
             <label className="body-variant text-gray-400 mb-4  ">Description</label>
-            <input className="focus:border-violet-500 heading-s text-gray-800 border border-gray-300 h-12 rounded-md p-4 mb-6" type="text" {...register("description")} />
+            <p className="m-0 p-0 text-red-500 text-sm ">
+              {errors?.description && "Description is required!"}
+            </p>
+            <input
+              className="focus:border-violet-500 heading-s text-gray-800 border border-gray-300 h-12 rounded-md p-4 mb-6"
+              type="text"
+              {...register("description", { required: true })}
+            />
 
             <label className="body-variant text-gray-400 mb-4  ">Currency</label>
+            <p className="m-0 p-0 text-red-500 text-sm ">
+              {errors?.currency && errors.currency.message}
+            </p>
             <div className="flex justify-start items-center mb-8">
-              <input className="focus:border-violet-500 heading-s text-gray-800 appearance-none rounded-full checked:bg-violet-600 border border-gray-300 h-5 w-5 mr-1 " type="radio" value="EUR" {...register("currency")} />
+              <input
+                className="focus:border-violet-500 heading-s text-gray-800 appearance-none rounded-full checked:bg-violet-600 border border-gray-300 h-5 w-5 mr-1 "
+                type="radio"
+                value="EUR"
+                {...register("currency", { required: 'Currency is required' })}
+              />
               <label>EUR</label>
-              <input className="focus:border-violet-500 heading-s text-gray-800 appearance-none rounded-full checked:bg-violet-600 border border-gray-300 h-5 w-5 mr-1 ml-4" type="radio" value="BRL" {...register("currency")} />
+              <input
+                className="focus:border-violet-500 heading-s text-gray-800 appearance-none rounded-full checked:bg-violet-600 border border-gray-300 h-5 w-5 mr-1 ml-4"
+                type="radio"
+                value="BRL"
+                {...register("currency", { required: 'Currency is required' })} />
               <label>BRL</label>
-              <input className="focus:border-violet-500 heading-s text-gray-800 appearance-none rounded-full checked:bg-violet-600 border border-gray-300 h-5 w-5 mr-1 ml-4" type="radio" value="USD" {...register("currency")} />
+              <input
+                className="focus:border-violet-500 heading-s text-gray-800 appearance-none rounded-full checked:bg-violet-600 border border-gray-300 h-5 w-5 mr-1 ml-4"
+                type="radio"
+                value="USD"
+                {...register("currency", { required: 'Currency is required' })} />
               <label>USD</label>
             </div>
 
             <label className="body-variant text-gray-400 mb-4  ">Value</label>
-            <input className="focus:border-violet-500 heading-s text-gray-800 border border-gray-300 h-12 rounded-md p-4 mb-6" type="number" {...register("value")} />
+            <p className="m-0 p-0 text-red-500 text-sm ">
+              {errors?.value && "Value is required!"}
+            </p>
+            <input
+              className="focus:border-violet-500 heading-s text-gray-800 border border-gray-300 h-12 rounded-md p-4 mb-6"
+              type="number"
+              {...register("value", { required: true })} />
 
             <label className="body-variant text-gray-400 mb-4  ">Due date</label>
-            <input className="focus:border-violet-500 heading-s text-gray-800 bg-transparent border border-gray-300 h-12 rounded-md p-4 mb-6" type="date" {...register("dueDate")} />
+            <p className="m-0 p-0 text-red-500 text-sm ">
+              {errors?.dueDate && "Due Date is required!"}
+            </p>
+            <input
+              className="focus:border-violet-500 heading-s text-gray-800 bg-transparent border border-gray-300 h-12 rounded-md p-4 mb-6"
+              type="date"
+              {...register("dueDate", { required: true })} />
 
             <div className="flex justify-between items-center">
               <div className="flex flex-col items-center">
                 <label className="body-variant text-gray-400 mb-4">Automatic Debit</label>
                 <input className="focus:border-violet-500 heading-s text-gray-800 appearance-none rounded-full checked:bg-violet-600 border border-gray-300 h-6 w-6 mb-6" type="checkbox" {...register("automaticDebit")} />
               </div>
+
               <div className="flex flex-col items-center">
                 <label className="body-variant text-gray-400 mb-4 ">Recurrent</label>
                 <input className="focus:border-violet-500 heading-s text-gray-800 appearance-none rounded-full checked:bg-violet-600 border border-gray-300 h-6 w-6 mb-6" type="checkbox" {...register("recurrent")} />
               </div>
+
               <div className="flex flex-col items-center">
                 <label className="body-variant text-gray-400 mb-4  ">Paid</label>
                 <input className="focus:border-violet-500 heading-s text-gray-800 appearance-none rounded-full checked:bg-violet-600 border border-gray-300 h-6 w-6 mb-6" type="checkbox" {...register("paid")} />

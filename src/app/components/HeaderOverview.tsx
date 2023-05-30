@@ -19,7 +19,6 @@ export default function HeaderOverview() {
   useEffect(() => {
     function handleResize() {
       setWidth(getSize());
-      console.log(getSize());
     }
 
     handleResize();
@@ -37,12 +36,8 @@ export default function HeaderOverview() {
       <div>
         <h2 className="text-gray-800 heading-m mb-1">Invoices</h2>
         <div className="text-gray-400 body-variant mt-3">
-          {width > 640
-            ?
-            (<span>There are 7 total invoices</span>)
-            :
-            (<span> 7 invoices</span>)
-          }
+          <span>{width > 640 ? "There are 7 total invoices" : "7 invoices"}</span>
+
         </div>
       </div>
 

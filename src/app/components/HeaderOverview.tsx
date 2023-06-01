@@ -12,9 +12,9 @@ function getSize() {
   return 0;
 }
 
-export default function HeaderOverview() {
+export default function HeaderOverview({ totalInvoices }: { totalInvoices: BigInteger }) {
   const [width, setWidth] = useState(0);
-  const [openModal, setOpenModal] = useState(false);
+  // const [openModal, setOpenModal] = useState(false);
 
   useEffect(() => {
     function handleResize() {
@@ -36,7 +36,8 @@ export default function HeaderOverview() {
       <div>
         <h2 className="text-gray-800 heading-m mb-1">Invoices</h2>
         <div className="text-gray-400 body-variant mt-3">
-          <span>{width > 640 ? "There are 7 total invoices" : "7 invoices"}</span>
+
+          <span>{width > 640 ? `There are ${totalInvoices} total invoices` : `${totalInvoices} invoices`}</span>
 
         </div>
       </div>

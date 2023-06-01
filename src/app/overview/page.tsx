@@ -1,8 +1,9 @@
 import HeaderOverview from "../components/HeaderOverview";
 import InvoiceItem, { InvoiceProps } from "../components/InvoiceItem";
 import EmptyInvoice from "../components/EmptyInvoice";
+import Link from "next/link";
 
-async function getExpenses() {
+export async function getExpenses() {
   const data = await fetch('http://192.168.178.243:3333/expenses', { cache: 'no-store' });
 
   if (!data.ok) {
@@ -18,12 +19,14 @@ export default async function Overview() {
   return (
     <div className="lg:flex relative">
       <div className="lg:w-736 mx-auto">
-        <HeaderOverview />
+        <HeaderOverview totalInvoices={expenses.length} />
         {expenses.map((expense: InvoiceProps) => (
-          <InvoiceItem key={expense.id} invoice={expense} />
+          <Link key={expense.id} href={`/invoice-status/${expense.id}`}>
+            <InvoiceItem invoice={expense} />
+          </Link>
         ))}
 
-        {/* <EmptyInvoice /> */}
+        {expenses.length === 0 && (<EmptyInvoice />)}
       </div>
     </div>
   )

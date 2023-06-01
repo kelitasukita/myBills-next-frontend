@@ -2,13 +2,16 @@ import Image from "next/image";
 
 export interface InvoiceProps {
   id: string;
+  paid: boolean;
   description: string;
   dueDate: string;
-  value: number;
+  automaticDebit: boolean;
+  recurrent: boolean;
   currentInstallment: number;
   installments: number;
-  paid: boolean;
   currency: string;
+  obs: string;
+  value: number;
 }
 
 export default function InvoiceItem({ invoice }: { invoice: InvoiceProps }) {

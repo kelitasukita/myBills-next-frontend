@@ -1,6 +1,7 @@
 import { InvoiceProps } from "@/app/components/InvoiceItem";
 import Button from "../../components/Button";
 import GoBackBtn from "../../components/GoBackBtn";
+import Link from "next/link";
 
 export async function getInvoice(invoiceId: string) {
   const data = await fetch('http://192.168.178.243:3333/expenses/' + invoiceId, { cache: 'no-store' });
@@ -19,7 +20,9 @@ export default async function InvoiceStatus({ params }: { params: { invoiceId: s
   return (
     <main className="lg:flex">
       <section className="flex flex-col w-11/12 lg:w-736 mx-auto mt-4 md:mt-6">
-        <GoBackBtn />
+        <Link href="/overview">
+          <GoBackBtn />
+        </Link>
         <article className="flex justify-between items-center w-full mx-auto p-6 rounded-lg bg-white ">
           <div className="w-full flex justify-between items-center md:justify-start">
             <span className="body-variant text-gray-400 md:mr-5">Status</span>

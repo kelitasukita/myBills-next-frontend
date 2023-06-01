@@ -1,5 +1,6 @@
 'use client';
 
+import Link from "next/link";
 import Button from "../components/Button";
 import GoBackBtn from "../components/GoBackBtn";
 import { SubmitHandler, useForm } from "react-hook-form";
@@ -32,7 +33,9 @@ export default function AddInvoice() {
     <main className="lg:ml-24 bg-black bg-opacity-50">
       <div className="flex flex-col bg-white md:w-4/5 md:rounded-r-3xl lg:w-2/4 xl:w-2/5 lg:left-24">
         <div className="pl-6 md:ml-4 lg:ml-0">
-          <GoBackBtn />
+          <Link href="/overview">
+            <GoBackBtn />
+          </Link>
         </div>
         <article className="p-6 md:ml-4 lg:ml-0">
           <header className="flex justify-start items-center">

@@ -77,8 +77,14 @@ export default function AddInvoiceModal() {
             />
           </div>
           <div className="flex">
-            <Button textColor="text-gray-400" bgColor="bg-gray-700" name="Save as Draft" />
-            <Button textColor="text-gray-100" bgColor="bg-violet-500" name="Save & Send" />
+            <Button
+              textColor="text-gray-400"
+              bgColor="bg-gray-700"
+              name="Save as Draft" />
+            <Button
+              textColor="text-gray-100"
+              bgColor="bg-violet-500"
+              name="Save & Send" />
           </div>
         </footer>
       </div>

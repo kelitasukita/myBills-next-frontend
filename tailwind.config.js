@@ -18,6 +18,9 @@ module.exports = {
 
         736: "736px",
       },
+      inset: {
+        18: "72px",
+      },
       colors: {
         "google-btn": "#eb4335",
         "input-focus": "#7c3aed",

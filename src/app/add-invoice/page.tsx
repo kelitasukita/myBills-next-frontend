@@ -5,7 +5,7 @@ import Button from "../components/Button";
 import GoBackBtn from "../components/GoBackBtn";
 import { SubmitHandler, useForm } from "react-hook-form";
 
-type FormData = {
+interface FormData {
   automaticDebit: boolean;
   currency: string;
   currentInstallment: number;
@@ -27,7 +27,6 @@ export default function AddInvoice() {
     console.log(data, 'teste');
 
   }
-
 
   return (
 

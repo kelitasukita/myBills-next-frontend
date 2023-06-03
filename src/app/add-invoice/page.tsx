@@ -25,6 +25,7 @@ export default function AddInvoice() {
 
   const onSubmit: SubmitHandler<FormData> = (data) => {
     console.log(data, 'teste');
+
   }
 
 

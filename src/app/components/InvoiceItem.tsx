@@ -31,7 +31,12 @@ export default function InvoiceItem({ invoice }: { invoice: InvoiceProps }) {
       <span className="col-start-1 col-end-2 text-slate-400 body inline-block mt-4 md:col-start-3 md:col-end-4 md:mt-0">Due {formatDate(new Date(invoice.dueDate))}</span>
       <strong className="col-start-1 col-end-2 text-gray-800 heading-s mt-4 md:col-start-4 md:col-end-4 md:mt-0 md:text-center">{invoice.paid || invoice.currency === 'EUR' ? '€' : 'R$'} {invoice.value}</strong>
 
-      <span className="col-start-3 col-end-3 row-start-1 text-right text-slate-400 body md:col-start-2 md:text-center">{invoice.currentInstallment}/{invoice.installments}</span>
+      {invoice.installments ?
+      <span className="col-start-3 col-end-3 row-start-1 text-right text-slate-400 body md:col-start-2 md:text-center"> 
+        {invoice.currentInstallment}/{invoice.installments}
+      </span> :
+      <span/> 
+      } 
 
       {invoice.paid ?
         (

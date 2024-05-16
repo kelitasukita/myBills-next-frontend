@@ -18,6 +18,14 @@ module.exports = {
 
         736: "736px",
       },
+      margin: {
+        18: "72px",
+        30: "120px",
+      },
+      padding: {
+        18: "72px",
+        30: "120px",
+      },
       inset: {
         18: "72px",
       },

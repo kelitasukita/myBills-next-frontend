@@ -1,10 +1,10 @@
 import { InvoiceProps } from "@/app/components/InvoiceItem";
+import Link from "next/link";
 import Button from "../../components/Button";
 import GoBackBtn from "../../components/GoBackBtn";
-import Link from "next/link";
 
 export async function getInvoice(invoiceId: string) {
-  const data = await fetch('http://192.168.178.243:3333/expenses/' + invoiceId, { cache: 'no-store' });
+  const data = await fetch('http://192.168.2.4:3333/expenses/' + invoiceId, { cache: 'no-store' });
 
   if (!data.ok) {
     throw new Error('Failed to fetch data!');
@@ -15,12 +15,15 @@ export async function getInvoice(invoiceId: string) {
 
 // {invoiceId: string }
 export default async function InvoiceStatus({ params }: { params: { invoiceId: string } }) {
-  const invoice: InvoiceProps = await getInvoice(params.invoiceId);
+
+  const invoice: InvoiceProps = await getInvoice(params.invoiceId); 
+
+  const [year, month, day] = invoice.dueDate.split('-');
 
   return (
     <main className="lg:flex">
       <section className="flex flex-col w-11/12 lg:w-736 mx-auto mt-4 md:mt-6">
-        <Link href="/overview">
+        <Link href={`/overview/${year}/${month}`}>
           <GoBackBtn />
         </Link>
         <article className="flex justify-between items-center w-full mx-auto p-6 rounded-lg bg-white ">

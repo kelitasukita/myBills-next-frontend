@@ -19,18 +19,18 @@ html {
 }
 .heading-s {
   @apply text-base leading-4  font-bold;
-  @layer -tracking-0.25;
+  @layer tracking025;
 }
 .heading-s-variant {
   @apply text-base leading-4  font-bold;
-  @layer -tracking-0.25;
+  @layer tracking025;
 }
 .body {
   @apply text-sm font-medium tracking-tight leading-4;
 }
 .body-variant {
   @apply text-sm leading-4  font-medium;
-  @layer -tracking-0.25;
+  @layer tracking025;
 }
 .focus {
   @apply border border-solid border-input-focus;
